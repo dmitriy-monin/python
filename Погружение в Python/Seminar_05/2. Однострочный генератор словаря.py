@@ -5,8 +5,8 @@
 Сумма рассчитывается как ставка умноженная на процент премии
 """
 
-names = {"John", "Mike", "Sam"}
-rates = {20000, 18000, 25000}
-premiums = {"10.25%", "8%", "7.75%"}
+names = ["John", "Mike", "Sam"]
+rates = [20000, 18000, 25000]
+premiums = ["10.25%", "8%", "7.75%"]
 gen = {name: round(rate * float(premium.strip('%')) / 100, 2) for name, rate, premium in zip(names, rates, premiums)}
 print(gen)
